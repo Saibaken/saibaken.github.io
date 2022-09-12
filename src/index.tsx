@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HomePage from './HomePage';
 import NotFoundPage from './NotFoundPage';
+import LoadingPage from './LoadingPage';
 import './index.css';
 
 const root = ReactDOM.createRoot(
@@ -21,22 +22,22 @@ root.render(
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/tic-tac-toe" element={
-          <React.Suspense fallback={<>...</>}>
+          <React.Suspense fallback={<LoadingPage appname='Tic Tac Toe'/>}>
             <TicTacToeApp />
           </React.Suspense>
         } />
         <Route path="/greensight" element={
-          <React.Suspense fallback={<>...</>}>
+          <React.Suspense fallback={<LoadingPage appname='Greensight Test Tast'/>}>
             <GreensightApp />
           </React.Suspense>
         } />
         <Route path="/todo" element={
-          <React.Suspense fallback={<>...</>}>
+          <React.Suspense fallback={<LoadingPage appname='Todo App'/>}>
             <TodoApp />
           </React.Suspense>
         } />
         <Route path="/calculator" element={
-          <React.Suspense fallback={<>...</>}>
+          <React.Suspense fallback={<LoadingPage appname='Calculator'/>}>
             <CalculatorApp />
           </React.Suspense>
         } />
