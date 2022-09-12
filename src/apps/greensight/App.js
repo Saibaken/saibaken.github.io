@@ -12,7 +12,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className="greensight-container">
       <div className="container">
       <p className="header">List of vacancies</p>
         {vacancies.map((vacancy) => {
