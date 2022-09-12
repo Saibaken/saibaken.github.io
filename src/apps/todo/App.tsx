@@ -29,9 +29,11 @@ function App() {
   if (error) return <h2>Error</h2>
 
   return (
-    <div className='container'>
-      <TodoInput value={input} updateValue={updateValue} handleSubmit={handleSubmit}/>
-      <TodoList />
+    <div className='todo-container'>
+      <div className='todo-inner-container'>
+        <TodoInput value={input} updateValue={updateValue} handleSubmit={handleSubmit} />
+        <TodoList />
+      </div>
     </div>
   );
 }

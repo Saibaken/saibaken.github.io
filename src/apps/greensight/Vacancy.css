@@ -1,4 +1,4 @@
-.container {
+.greensight-inner-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,14 +76,14 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .container {
+  .greensight-inner-container {
     max-width: 960px;
     padding: 0 60px;
   }
 }
 
 @media screen and (max-width: 960px) {
-  .container {
+  .greensight-inner-container {
     max-width: 100%;
     padding: 0 25px;
   }

@@ -79,7 +79,7 @@ function App() {
 
   return (
     <div className="tic-tac-toe-container">
-      <div className="container">
+      <div className="tic-tac-toe-inner-container">
         <h1 className="headline">Tic Tac Toe</h1>
         <div className="turn">Current player: {player}</div>
         <div className="field" ref={fieldRef}>

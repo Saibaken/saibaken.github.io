@@ -1,11 +1,11 @@
 @import "../../../node_modules/normalize.css/normalize.css";
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
-body {
+.todo-container {
   font-family: Rubik;
   font-size: 16px;
 }
 
-.container {
+.todo-inner-container {
   width: 100%;
 }

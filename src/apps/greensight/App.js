@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="greensight-container">
-      <div className="container">
+      <div className="greensight-inner-container">
       <p className="header">List of vacancies</p>
         {vacancies.map((vacancy) => {
           return <Vacancy key={vacancy.id} vacancy={vacancy} />;
