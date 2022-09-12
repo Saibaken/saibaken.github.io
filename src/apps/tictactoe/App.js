@@ -78,27 +78,29 @@ function App() {
   };
 
   return (
-    <div className="container">
-      <h1 className="headline">Tic Tac Toe</h1>
-      <div className="turn">Current player: {player}</div>
-      <div className="field" ref={fieldRef}>
-        {field.map((item, index) => (
-          <span key={index} className="tile-span">
-            <button
-              className="game-tile"
-              key={index}
-              id={index}
-              onClick={(e) => makeTurn(e)}
-            >
-              {item}
-            </button>
-            {index % 3 === 2 ? <br></br> : <></>}
-          </span>
-        ))}
+    <div className="tic-tac-toe-container">
+      <div className="container">
+        <h1 className="headline">Tic Tac Toe</h1>
+        <div className="turn">Current player: {player}</div>
+        <div className="field" ref={fieldRef}>
+          {field.map((item, index) => (
+            <span key={index} className="tile-span">
+              <button
+                className="game-tile"
+                key={index}
+                id={index}
+                onClick={(e) => makeTurn(e)}
+              >
+                {item}
+              </button>
+              {index % 3 === 2 ? <br></br> : <></>}
+            </span>
+          ))}
+        </div>
+        <button className="reset-button" onClick={reset}>
+          Reset
+        </button>
       </div>
-      <button className="reset-button" onClick={reset}>
-        Reset
-      </button>
     </div>
   );
 }
