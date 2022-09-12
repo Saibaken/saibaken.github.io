@@ -1,3 +1,9 @@
-import TodoApp from "./TodoApp"
+import React from 'react';
+import App from './App';
+import './index.css';
+import { Provider }  from "react-redux"
+import store from './store'
 
-export default TodoApp
+const TodoApp = () => <Provider store={store}><App/></Provider>
+
+export default TodoApp;
