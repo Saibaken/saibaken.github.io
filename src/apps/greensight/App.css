@@ -1,0 +1,39 @@
+.greensight-container {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.header {
+    margin-top: 80px;
+    margin-bottom: 75px;
+    font-size: 64px;
+    line-height: 38px;
+    align-self: flex-start;
+}
+
+.text-gray {
+  color: #545454;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.mtb-2 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
