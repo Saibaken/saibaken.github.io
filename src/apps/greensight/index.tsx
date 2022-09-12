@@ -1,3 +1,3 @@
-import GreensightApp from "./GreensightApp";
+import App from "./App";
 
-export default GreensightApp;
+export default App;

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.header {
+    margin-top: 80px;
+    margin-bottom: 75px;
+    font-size: 64px;
+    line-height: 38px;
+    align-self: flex-start;
+}
+
+.text-gray {
+  color: #545454;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.mtb-2 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
