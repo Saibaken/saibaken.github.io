@@ -17,10 +17,12 @@
 
 .navigation__link {
     display: block;
+    font-family: 'Rubik';
     padding: 10px;
     margin: 5px;
     text-decoration: none;
     cursor: pointer;
+    color: white;
 }
 
 .navigation__link:visited {
