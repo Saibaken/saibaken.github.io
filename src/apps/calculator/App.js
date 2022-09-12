@@ -91,7 +91,8 @@ export default function App() {
   });
 
   return (
-    <form>
+    <div className="calculator-container">
+      <form className="calculator-form">
         <div className="container gap-2 d-flex flex-column justify-content-center align-items-center">
           <div className="row flex-column col-12 col-md-8 col-lg-4">
             <div className="col my-1">
@@ -296,5 +297,6 @@ export default function App() {
           </div>
         </div>
       </form>
+    </div>
   );
 }
