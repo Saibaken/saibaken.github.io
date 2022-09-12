@@ -4,12 +4,33 @@ import './HomePage.css'
 
 export default function HomePage() {
   return (
-    <div className='homepage'>
-      <h1 className='homepage__title'>HomePage</h1>
-      <Link className='homepage__link' to='/calculator'>calculator</Link><br></br>
-      <Link className='homepage__link' to='/tic-tac-toe'>tic-tac-toe</Link><br></br>
-      <Link className='homepage__link' to='/greensight'>greensight</Link><br></br>
-      <Link className='homepage__link' to='todo'>todo</Link>
+    <div className='hp-container'>
+      <div className="navigation">
+        <Link className='navigation__link' to='/calculator'>Calculator
+          <div className='link__description'>
+            Learning Bootstrap and SCSS<br/>
+            <span className='last-updated'>last updated: date</span>
+          </div>
+        </Link>
+        <Link className='navigation__link' to='/tic-tac-toe'>Tic Tac Toe
+          <div className="link__description">
+            Free time project, just for fun<br/>
+            <span className='last-updated'>last updated: date</span>
+          </div>
+        </Link>
+        <Link className='navigation__link' to='/greensight'>Greensight test task
+          <div className="link__description">
+            Test task to Greensight. Learned BEM and CSS media-query<br/>
+            <span className='last-updated'>last updated: date</span>
+          </div>
+        </Link>
+        <Link className='navigation__link' to='/todo'>Todo
+        <div className="link__description">
+            Learning Redux ToolKit with async reducers<br/>
+          <div className="last-updated">last updated: date</div>
+        </div>
+        </Link>
+      </div>
     </div>
   )
 }
