@@ -1,3 +1,3 @@
-import TicTacToeApp from "./TicTacToeApp";
+import App from "./App";
 
-export default TicTacToeApp;
+export default App;
