@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import HomePage from './HomePage';
-import NotFoundPage from './NotFoundPage';
-import LoadingPage from './LoadingPage';
+import HomePage from './pages/HomePage/HomePage';
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
+import LoadingPage from './pages/LoadingPage/LoadingPage';
 import './index.css';
 
 const root = ReactDOM.createRoot(
