@@ -1,0 +1,121 @@
+$font-stack: Roboto;
+
+html {
+  background-color: rgb(31, 37, 55);
+  font-size: 24px;
+}
+	
+form {
+  //margin-top: 5vh;
+  background-color: rgb(31, 37, 55);
+} 
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+button.round-button {
+  min-width: 30px;
+  max-width: 60px;
+  text-decoration: none;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  border-style: none;
+  color: white;
+  border-radius: 100%;
+  overflow: none;
+  text-align: center;
+  padding: 0;
+}
+
+button.round-button:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 100%;
+}
+
+ul.prev-values {
+  overflow-y: auto;
+  width: 100%;
+  height: 10vh;
+  margin: 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+ul.prev-values::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+li.previous-value {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 28px;
+  list-style-type: none;
+
+}
+
+div.current-input {
+  color: white;
+  background-color: #293148;
+  font-size: 34px;
+  overflow-x: scroll;
+}
+
+button.rounded-circle {
+  aspect-ratio: 1 / 1;
+}
+
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+$utilities: (
+  "viewport-width": (
+    property: width,
+    class: vw,
+    values: (
+      100: 100vw,
+      5: 5vw,
+      10: 10vw,
+      15: 15vw,
+      20: 20vw,
+      25: 25vw,
+    ),
+  ),
+  "viewport-height": (
+    property: height,
+    class: vh,
+    values: (
+      100: 100vh,
+      5: 5vh,
+      10: 10vh,
+      15: 15vh,
+      20: 20vh,
+      25: 25vh,
+      75: 75vh,
+      85: 85vh,
+    ),
+  ),
+);
+
+$theme-colors: (
+  "ac": #b93030,
+  "equals": #518c56,
+  "numbers": #293148,
+  "operations": #315a88,
+  "x-operations": #2b3b54,
+);
+
+$spacer: 5px;
+
+@import "~bootstrap/scss/bootstrap";
