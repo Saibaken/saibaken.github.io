@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Vacancy from "./Vacancy";
 import FeedbackForm from "./FeedbackForm";
 import "./App.css";
+import BackButton from "../../components/BackButton/BackButton";
 
 function App() {
   const [vacancies, setVacancies] = useState([]);
@@ -12,15 +13,18 @@ function App() {
   }, []);
 
   return (
-    <div className="greensight-container">
-      <div className="greensight-inner-container">
-      <p className="header">List of vacancies</p>
-        {vacancies.map((vacancy) => {
-          return <Vacancy key={vacancy.id} vacancy={vacancy} />;
-        })}
-      <FeedbackForm/>
+    <>
+      <BackButton />
+      <div className="greensight-container">
+        <div className="greensight-inner-container">
+          <p className="header">List of vacancies</p>
+          {vacancies.map((vacancy) => {
+            return <Vacancy key={vacancy.id} vacancy={vacancy} />;
+          })}
+          <FeedbackForm />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
