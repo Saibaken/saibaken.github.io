@@ -1,5 +1,5 @@
 import React from "react";
-import { useId, useRef, useState } from "react";
+import { useId, useRef } from "react";
 import "./FeedbackForm.css";
 
 export default function FeedbackForm() {
