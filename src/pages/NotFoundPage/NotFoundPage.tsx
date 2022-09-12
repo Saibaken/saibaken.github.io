@@ -4,9 +4,7 @@ import './NotFoundPage.css'
 export default function NotFoundPage() {
   return (
     <div className='not-found-page'>
-      <span>404</span>
-      |
-      <span>Page not found</span>
+      404 | Page not found
     </div>
   )
 }
